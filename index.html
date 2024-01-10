@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pemesanan Tiket Travel</h2>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" />
+
+      <label for="tujuan">Tujuan:</label>
+      <select id="tujuan" onchange="setHargaTiket()">
+        <option value="Jakarta">Jakarta</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+        <option value="Bali">Bali</option>
+      </select>
+
+      <label for="jumlahTiket">Jumlah Tiket:</label>
+      <select id="jumlahTiket">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+      <label for="harga">Harga Tiket (per tiket):</label>
+      <input type="text" id="harga" placeholder="Harga" disabled />
+
+      <label for="member">Member:</label>
+      <input type="checkbox" id="member" /> Member
+
+      <label for="diskon">Diskon:</label>
+      <input type="text" id="diskon" placeholder="Masukkan kode Diskon" />
+
+      <button onclick="hitungTotal()">Hitung Total</button>
+
+      <div class="total">Total Bayar: <span id="totalBayar">0</span></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

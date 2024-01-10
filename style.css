@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background : blue;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label,
+select,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 100%;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
